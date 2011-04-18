@@ -285,7 +285,7 @@ class Ideone(object):
         self._language_dict = result_dict['languages']
         return result_dict
 
-    def test_function(self):
+    def test(self):
         """
         A test function that always returns the same thing.
 
