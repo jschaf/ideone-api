@@ -9,7 +9,7 @@ setup(
     version = "0.0.1",
     author = "Joe Schafer",
     author_email = "joe@jschaf.com",
-    url = "http://github.com/jschaf",
+    url = "http://github.com/jschaf/ideone-api/",
     description = "A Python binding to the Ideone API.",
     license = "BSD",
     keywords = "API ideone codepad",
