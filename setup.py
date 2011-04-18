@@ -6,9 +6,9 @@ def read(fname):
 
 setup(
     name = "ideone",
-    version = "0.0.1"
+    version = "0.0.1",
     author = "Joe Schafer",
-    author_email = "joe@jschaf.com"
+    author_email = "joe@jschaf.com",
     description = "A Python binding to the Ideone API.",
     license = "BSD",
     keywords = "API ideone codepad",
@@ -18,6 +18,6 @@ setup(
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
         "License :: OSI Approved :: BSD License",
-    ]
+    ],
 
 )
