@@ -21,9 +21,8 @@ Getting Started
 
 You need an Ideone account and an *API password* which you can create
 at the `Ideone registration page`_.  After that, open up a Python
-shell and begin hacking.
+shell and begin hacking. ::
 
-::
     >>> from ideone import Ideone
     >>> i = Ideone('username', 'APIpassword')
     >>> i.test()
