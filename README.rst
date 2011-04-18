@@ -8,11 +8,12 @@ This project is a Pythonic binding to the `Ideone API`_.
 Installation
 ============
 
-The Ideone API can also be installed with `pip` from `PyPI`_ using
-`pip install ideone`.  Alternately, you can clone the repository and
+The Ideone API can also be installed with ``pip`` from `PyPI`_ using
+``pip install ideone``.  Alternately, you can clone the repository and
 use setup.py like so ::
 
     git clone https://github.com/jschaf/ideone-api.git
+    cd ideone-api
     python setup.py install
 
 Getting Started
