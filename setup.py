@@ -4,9 +4,11 @@ from setuptools import setup
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
+version = __import__('social_auth').__version__
+
 setup(
     name = "ideone",
-    version = "0.0.1",
+    version = version,
     author = "Joe Schafer",
     author_email = "joe@jschaf.com",
     url = "http://github.com/jschaf/ideone-api/",
