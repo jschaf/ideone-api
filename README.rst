@@ -37,7 +37,7 @@ shell and begin hacking. ::
      'link' : 'LsSbo'}
 
     >>> i.submission_details('LsSbo')
-    {'cmpinfo': ,
+    {'cmpinfo': "",
      'date': "2011-04-18 15:24:14",
      'error': "OK",
      'input': "",
