@@ -4,7 +4,7 @@ from setuptools import setup
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
-version = __import__('social_auth').__version__
+version = __import__('ideone').__version__
 
 setup(
     name = "ideone",
