@@ -1,8 +1,8 @@
+version = (0, 1, 3)
+__version__ = '.'.join(map(str, version))
+
 from suds.client import Client
 from suds.xsd.doctor import ImportDoctor, Import
-
-version = (0, 1, 2)
-__version__ = '.'.join(map(str, version))
 
 class Status(object):
     AWAITING_COMPILATION = -1
