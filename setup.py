@@ -5,11 +5,11 @@ f = open(os.path.join(os.path.dirname(__file__), 'README.rst'))
 readme = f.read()
 f.close()
 
-version = __import__('ideone').__version__
+VERSION = "0.1.3"
 
 setup(
     name = "ideone",
-    version = version,
+    version = VERSION,
     author = "Joe Schafer",
     author_email = "joe@jschaf.com",
     url = "http://github.com/jschaf/ideone-api/",

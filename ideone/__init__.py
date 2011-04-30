@@ -1,6 +1,3 @@
-version = (0, 1, 3)
-__version__ = '.'.join(map(str, version))
-
 from suds.client import Client
 from suds.xsd.doctor import ImportDoctor, Import
 
