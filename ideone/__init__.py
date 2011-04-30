@@ -1,7 +1,7 @@
 from suds.client import Client
 from suds.xsd.doctor import ImportDoctor, Import
 
-version = (0, 1, 1)
+version = (0, 1, 2)
 __version__ = '.'.join(map(str, version))
 
 class Status(object):
