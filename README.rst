@@ -32,9 +32,13 @@ shell and begin hacking. ::
      'oOok': True,
      'pi': 3.14}
 
-    >>> i.create_submission('print(42)', 'python')
+    >>> i.create_submission('print(42)', language_name='python')
     {'error': 'OK',
      'link' : 'LsSbo'}
+
+    >>> i.create_submission('print(42)', language_id=166)
+    {'error': 'OK',
+     'link' : 'FDfrM'}
 
     >>> i.submission_details('LsSbo')
     {'cmpinfo': "",

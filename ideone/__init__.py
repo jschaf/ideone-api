@@ -117,8 +117,8 @@ class Ideone(object):
         return language_id
             
         
-    def create_submission(self, source_code, language_name, std_input="",
-                          run=True, private=False):
+    def create_submission(self, source_code, language_name=None, language_id=None,
+                          std_input="", run=True, private=False):
         """
         Create a submission and upload it to Ideone.
 
@@ -127,6 +127,7 @@ class Ideone(object):
         
         * source_code: a string of the programs source code
         * language_name: the human readable language string (e.g. 'python')
+        * language_id: the ID of the programming language
         * std_input: the string to pass to the program on stdin
         * run: a boolean flag to signifying if Ideone should compile and
                run the program
@@ -143,12 +144,12 @@ class Ideone(object):
         --------
         
         >>> ideone_object = Ideone('username', 'password')
-        >>> ideone_object.create_submission('print(42)', 'python')
+        >>> ideone_object.create_submission('print(42)', language_name='python')
         {'error': 'OK',
          'link' : 'LsSbo'}
 
         """
-        language_id = self._translate_language_name(language_name)
+        language_id = language_id or self._translate_language_name(language_name)
         result = self.client.service.createSubmission(self.user, self.password,
                                                       source_code, language_id,
                                                       std_input, run, private)
